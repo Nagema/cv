@@ -7,36 +7,38 @@ import Hero from "./components/Hero";
 import More from "./components/More";
 import { CV } from "./CV/CV";
 
-const { hero, education, experience, languages, habilities, volunteer } = CV;
+const { hero, education, experience, languages, tecnologies, projects } = CV;
 function App() {
-  const [showEducation, setShowEducation] = useState(true);
+  let section = "education";
+  const [showSection, setShowSection] = useState(section);
+
+  const showInfo = (e) => {
+    section = e.target.value;
+    setShowSection(section);
+  };
+
   return (
     <div className="card">
       <Hero hero={hero} />
       <About hero={hero.aboutMe} />
-      <button
-        className="custom-btn btn-4"
-        onClick={() => setShowEducation(true)}
-      >
+      <button value="education" onClick={showInfo}>
         Education
       </button>
-      <button
-        className="custom-btn btn-4"
-        onClick={() => setShowEducation(false)}
-      >
+      <button value="experience" onClick={showInfo}>
         Experience
       </button>
-      {showEducation ? (
-        <Education education={education} />
-      ) : (
-        <Experience experience={experience} />
+      <button value="more" onClick={showInfo}>
+        More
+      </button>
+      {showSection === "education" && <Education education={education} />}
+      {showSection === "experience" && <Experience experience={experience} />}
+      {showSection === "more" && (
+        <More
+          languages={languages}
+          tecnologies={tecnologies}
+          projects={projects}
+        />
       )}
-      <Experience experience={experience} />
-      <More
-        languages={languages}
-        habilities={habilities}
-        volunteer={volunteer}
-      />
     </div>
   );
 }

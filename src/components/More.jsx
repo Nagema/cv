@@ -1,6 +1,6 @@
 import React from "react";
 import "./More.css";
-const More = ({ languages, habilities, volunteer }) => {
+const More = ({ languages, tecnologies, projects }) => {
   return (
     <div className="card">
       <div>
@@ -11,7 +11,7 @@ const More = ({ languages, habilities, volunteer }) => {
       </div>
       <h4>Skills</h4>
       <div>
-        {habilities.map((item) => {
+        {tecnologies.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
               <p>{item}</p>
@@ -20,12 +20,13 @@ const More = ({ languages, habilities, volunteer }) => {
         })}
       </div>
       <div>
-        <h4>Volunteer</h4>
-        {volunteer.map((item) => {
+        <h4>projects</h4>
+        {projects.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
               <p>{item.name}</p>
-              <p>{item.where}</p>
+              <p>{item.link}</p>
+              <p>{item.tecnologies}</p>
               <p>{item.description}</p>
             </div>
           );

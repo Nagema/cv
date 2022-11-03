@@ -1,80 +1,98 @@
 export const CV = {
   hero: {
-    name: "Anthony",
-    address: "Edward Stark",
-    city: "Avengers Tower / New York",
-    email: "tony@starkindustries.com",
-    birthDate: "29/05/1970",
+    name: "Angelica",
+    address: "Cavero Panez",
+    city: "Madrid",
+    email: "angelica.cavero@gmail.com",
+    birthDate: "25/06/1985",
     phone: "(+12) 767333841",
-    image: "https://i.imgur.com/ZQAkED3.png",
-    gitHub: "https://github.com/tonystark",
+    image:
+      "https://avatars.githubusercontent.com/u/40359358?s=400&u=07687bae251b40adf2e52df783886e6b52931c0c&v=4",
+    gitHub: "https://github.com/Nagema",
     aboutMe: [
       {
-        info: "🤖 My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
+        info: "Love learning new technologies and looking for new challenges.",
       },
       {
-        info: "🔩 CEO of Stark Industries.",
+        info: "Lovel learning new technologies and looking for new challenges.",
       },
       {
-        info: "🕶 Genius, billionaire, playboy, philanthropist.",
-      },
-      {
-        info: "🦾 I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
+        info: "Lovep learning new technologies and looking for new challenges.",
       },
     ],
   },
   education: [
     {
-      name: "Master in physics",
-      date: "1985",
-      where: "MIT",
+      name: "HTML5 CSS3 Web Interface Design",
+      date: "OCTOBER 2018 - FEBRUARY 2019",
+      where: "Fictizia - Madrid",
     },
     {
-      name: "Aeronautical Engineering",
-      date: "1995",
-      where: "ATI Vaughn College",
+      name: "Master in Marketing and Commercial Management",
+      date: "SEPTEMBER 2015 - 2016",
+      where: "EAE Business School - Madrid",
     },
     {
-      name: "Weapons Engineer",
-      date: "1998",
-      where: "Firearm Collegue, Queens",
+      name: "Management and Administration",
+      date: "AUGUST 2006 - DECEMBER 2013",
+      where: "Ricardo Palma University - Perú",
     },
   ],
   experience: [
     {
-      name: "Consultant",
-      date: "01/01/2013 – Nowadays",
-      where: "S.H.I.E.L.D",
+      name: "Front-end Developer",
+      date: "MADRID, ESPAÑA (2019 - 2022)",
+      where: "BBVAIT",
       description:
-        "It builds the helicarriers used by S.H.I.E.L.D. It produces the Quinjets used by the Avengers.",
+        "Development and maintenance of the BBVA mobile application, currently developing with Ember.js in ES6+, working migrations, refactors and new features. Experience with Pull Requests, Git, Agile and testing. Additional training with Polymer and LitElement.",
     },
     {
-      name: "CEO",
-      date: "01/01/2000 – 28/02/2012",
-      where: "Stark Industries",
+      name: "Marketing and Management asistance",
+      date: "MADRID, ESPAÑA (2017 - 2018)",
+      where: "Servihousing Real Estate Management",
+      description:
+        "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies. The company manufactures the armor worn by Iron Man and War Machine.",
+    },
+    {
+      name: "Building Management Administrative",
+      date: "LIMA - PERU (2012 - 2014)",
+      where: "América Móvil Perú(Claro)",
+      description:
+        "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies. The company manufactures the armor worn by Iron Man and War Machine.",
+    },
+    {
+      name: "Human Resources Intern",
+      date: "LIMA - PERU (2011 - 2012)",
+      where: "SAVIA Peru",
       description:
         "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies. The company manufactures the armor worn by Iron Man and War Machine.",
     },
   ],
   languages: {
     language: "English",
-    wrlevel: "Native",
-    splevel: "Native",
+    wrlevel: "C1 level",
+    splevel: "C1 level",
   },
-  habilities: [
-    "Robotics",
-    "Robot Programming",
-    "Physics",
-    "Weaponery",
-    "Engineer",
-    "Money",
-    "Dating",
-    "Saving the world",
+  tecnologies: [
+    "HTML5",
+    "CSS3",
+    "Flexbox",
+    "CSS Grid",
+    "SASS",
+    "Bootstrap",
+    "JavaScript (ES6) and third-party web services (APIs)",
+    "Ember.js",
+    "React.js",
+    "Git",
+    "Firebase",
+    "Slack, Trello, Jira, GitHub, Bitbucket.",
+    "Experience in executing projects with agile methodologies and SCRUM",
   ],
-  volunteer: [
+  projects: [
     {
-      name: "September Foundation",
-      where: "MIT",
+      name: "Ecommerce Fleamarket",
+      link: "https://fleamarketandotherstories.netlify.app/",
+      tecnology: "MIT",
       description:
         "The September Foundation is a program by Tony Stark to fund schools and young prodigies in their education. The foundation was named by Stark after a lyric from The Fantasticks song, 'Try to Remember,' which he heard his mother sing and play on the piano before her death.",
     },
