@@ -2,13 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .card {
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
+  padding-left: 0;
+  padding-right: 20px;
   border-radius: 12px;
 }
+.card p {
+  margin: 0.5em;
+}
+
 img {
   width: 150px;
   margin: 20px;
@@ -21,4 +26,17 @@ h2 {
 a {
   color: #0b0089;
   text-decoration: none;
+}
+
+@media (min-width: 620px) {
+  .hero {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .card {
+    text-align: left;
+    padding: 20px 50px;
+    border-radius: 12px;
+  }
 }

@@ -1,10 +1,17 @@
 import { useState } from "react";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGraduationCap,
+  faHouseLaptop,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 import About from "./components/About";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import More from "./components/More";
+import Knowledge from "./components/Knowledge";
+import Projects from "./components/Projects";
 import { CV } from "./CV/CV";
 
 const { hero, education, experience, languages, tecnologies, projects } = CV;
@@ -21,24 +28,29 @@ function App() {
     <div className="card">
       <Hero hero={hero} />
       <About hero={hero.aboutMe} />
-      <button value="education" onClick={showInfo}>
-        Education
+
+      <button className="button-opt" value="education" onClick={showInfo}>
+        <FontAwesomeIcon icon={faGraduationCap} /> Education
       </button>
-      <button value="experience" onClick={showInfo}>
-        Experience
+
+      <button className="button-opt" value="experience" onClick={showInfo}>
+        <FontAwesomeIcon icon={faHouseLaptop} /> Experience
       </button>
-      <button value="more" onClick={showInfo}>
-        More
+
+      <button className="button-opt" value="knowledge" onClick={showInfo}>
+        <FontAwesomeIcon icon={faCode} /> Knowledge
       </button>
+
+      <button className="button-opt" value="projects" onClick={showInfo}>
+        <FontAwesomeIcon icon={faCode} /> Projects
+      </button>
+
       {showSection === "education" && <Education education={education} />}
       {showSection === "experience" && <Experience experience={experience} />}
-      {showSection === "more" && (
-        <More
-          languages={languages}
-          tecnologies={tecnologies}
-          projects={projects}
-        />
+      {showSection === "knowledge" && (
+        <Knowledge languages={languages} tecnologies={tecnologies} />
       )}
+      {showSection === "projects" && <Projects projects={projects} />}
     </div>
   );
 }
