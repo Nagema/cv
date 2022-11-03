@@ -14,10 +14,10 @@ export const CV = {
         info: "Love learning new technologies and looking for new challenges.",
       },
       {
-        info: "Lovel learning new technologies and looking for new challenges.",
+        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, error officia est quasi veniam illo harum perferendis placeat deserunt? Enim ipsam voluptas illum, soluta beatae mollitia vitae tempore laborum obcaecati!",
       },
       {
-        info: "Lovep learning new technologies and looking for new challenges.",
+        info: "Lorem ipsum dolor sit amet uptas illum, soluta beatae mollitia vitae tempore laborum obcaecati!",
       },
     ],
   },
@@ -83,6 +83,7 @@ export const CV = {
     "JavaScript (ES6) and third-party web services (APIs)",
     "Ember.js",
     "React.js",
+    "node.js",
     "Git",
     "Firebase",
     "Slack, Trello, Jira, GitHub, Bitbucket.",
@@ -92,15 +93,18 @@ export const CV = {
     {
       name: "Ecommerce Fleamarket",
       link: "https://fleamarketandotherstories.netlify.app/",
-      tecnology: "MIT",
+      repository: "https://github.com/Nagema/coder-project",
+      tecnology: "React.js",
       description:
-        "The September Foundation is a program by Tony Stark to fund schools and young prodigies in their education. The foundation was named by Stark after a lyric from The Fantasticks song, 'Try to Remember,' which he heard his mother sing and play on the piano before her death.",
+        "This web has a list of products that you can find by categories and check the detail of each product, you can also add products to the shopping cart and then will direct you to the final process of the checkout where you can also see the detail of the purchase.",
     },
     {
-      name: "Damage Control",
-      where: "U.S.A.",
+      name: "Catalogo productos",
+      link: "https://phones-app.onrender.com/",
+      repository: "https://github.com/Nagema/phones-app",
+      tecnology: "React.js",
       description:
-        "The United States Department of Damage Control, occasionally known as the DODC, is a department of the United States of America. Initially a subsidiary of S.H.I.E.L.D., Damage Control was an organization specializing in post-battle clean-up. Following the Battle of New York, Damage Control was made into an executive branch of the United States government, and in a joint venture with Stark Industries, was tasked with acquiring alien and other dangerous artifacts along with cleaning up damages caused by enhanced individuals.",
+        "This app is a phone catalog where you can find detailed information when you click on the phone on the main page. This app also has a list of brands in the header so you can filter them by manufacturer, there is also an option in the header where you can add phone information and it will show you the new phone on the main page of the app.",
     },
   ],
 };
