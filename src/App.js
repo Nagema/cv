@@ -28,22 +28,23 @@ function App() {
     <div className="card">
       <Hero hero={hero} />
       <About hero={hero.aboutMe} />
+      <div className="button-wrapper">
+        <button className="button-opt" value="education" onClick={showInfo}>
+          <FontAwesomeIcon icon={faGraduationCap} /> Education
+        </button>
 
-      <button className="button-opt" value="education" onClick={showInfo}>
-        <FontAwesomeIcon icon={faGraduationCap} /> Education
-      </button>
+        <button className="button-opt" value="experience" onClick={showInfo}>
+          <FontAwesomeIcon icon={faHouseLaptop} /> Experience
+        </button>
 
-      <button className="button-opt" value="experience" onClick={showInfo}>
-        <FontAwesomeIcon icon={faHouseLaptop} /> Experience
-      </button>
+        <button className="button-opt" value="knowledge" onClick={showInfo}>
+          <FontAwesomeIcon icon={faCode} /> Knowledge
+        </button>
 
-      <button className="button-opt" value="knowledge" onClick={showInfo}>
-        <FontAwesomeIcon icon={faCode} /> Knowledge
-      </button>
-
-      <button className="button-opt" value="projects" onClick={showInfo}>
-        <FontAwesomeIcon icon={faCode} /> Projects
-      </button>
+        <button className="button-opt" value="projects" onClick={showInfo}>
+          <FontAwesomeIcon icon={faCode} /> Projects
+        </button>
+      </div>
 
       {showSection === "education" && <Education education={education} />}
       {showSection === "experience" && <Experience experience={experience} />}

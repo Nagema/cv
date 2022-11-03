@@ -1,4 +1,6 @@
 import React from "react";
+import github from "../assets/images/github.svg";
+
 import "./Hero.css";
 
 const Hero = ({ hero }) => {
@@ -16,7 +18,9 @@ const Hero = ({ hero }) => {
         </p>
         <p>{hero.phone}</p>
         <p>
-          <a href={hero.github}>GitHub</a>
+          <a href={hero.github}>
+            <img className="github-icon" src={github} alt="github" /> GitHub
+          </a>
         </p>
       </div>
     </div>
