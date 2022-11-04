@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 50px;
 }
 
 .github-icon {
@@ -15,7 +16,6 @@
 .card {
   text-align: center;
   padding-left: 0;
-  padding-right: 20px;
   border-radius: 12px;
 }
 
@@ -23,10 +23,14 @@
   margin: 0.5em;
 }
 
-img {
-  width: 150px;
+.hero-image {
+  width: 250px;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 50%;
+  border-style: double;
+  border-width: 1em;
+  border-color: rgba(231, 237, 243, 0.637);
+  box-shadow: 0 0 50px #ccc;
 }
 
 h2 {
@@ -39,15 +43,14 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 824px) {
   .hero {
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
   }
 
   .card {
     text-align: left;
-    padding: 20px 50px;
     border-radius: 12px;
   }
 }

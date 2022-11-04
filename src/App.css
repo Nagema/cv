@@ -1,10 +1,13 @@
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
 .button-opt {
   width: 9em;
   margin: 5px 10px;
   background: none;
   color: inherit;
-  border: solid 1px lightgray;
-  padding: 0.5em 1em;
+  border: none;
   font: inherit;
   cursor: pointer;
   outline: inherit;
@@ -13,11 +16,14 @@
   margin: 0;
 }
 
-.button-wrapper {
+.navbar-container {
   margin-top: 2em;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 824px) {
   .hero {
     flex-direction: row;
     justify-content: left;
@@ -25,7 +31,9 @@
 
   .card {
     text-align: left;
-    padding: 20px 50px;
     border-radius: 12px;
+  }
+  .buttons-wrapper {
+    display: flex;
   }
 }

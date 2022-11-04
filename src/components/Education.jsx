@@ -3,10 +3,10 @@ import "./Education.css";
 const Education = ({ education }) => {
   return (
     <div>
-      <div className="education card">
+      <div className="education-wrapper">
         {education.map((item) => {
           return (
-            <div key={JSON.stringify(item)}>
+            <div className="education-info" key={JSON.stringify(item)}>
               <p>{item.name}</p>
               <p>{item.where}</p>
               <p>{item.date}</p>

@@ -6,11 +6,14 @@ import "./Hero.css";
 const Hero = ({ hero }) => {
   return (
     <div className="hero">
-      <img src={hero.image} alt="" />
+      <img className="hero-image" src={hero.image} alt="" />
       <div className="card">
-        <h2>
+        <div>
+          <h4>Frontend-developer</h4>
+        </div>
+        <h1>
           {hero.name} {hero.address}
-        </h2>
+        </h1>
         <p>{hero.city}</p>
         <p>{hero.birthday}</p>
         <p>

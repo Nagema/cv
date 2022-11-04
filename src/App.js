@@ -1,11 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGraduationCap,
-  faHouseLaptop,
-  faCode,
-} from "@fortawesome/free-solid-svg-icons";
+
 import About from "./components/About";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -13,6 +8,7 @@ import Hero from "./components/Hero";
 import Knowledge from "./components/Knowledge";
 import Projects from "./components/Projects";
 import { CV } from "./CV/CV";
+import Buttons from "./components/Buttons";
 
 const { hero, education, experience, languages, tecnologies, projects } = CV;
 function App() {
@@ -26,25 +22,9 @@ function App() {
 
   return (
     <div className="card">
+      <Buttons showInfo={showInfo} />
       <Hero hero={hero} />
       <About hero={hero.aboutMe} />
-      <div className="button-wrapper">
-        <button className="button-opt" value="education" onClick={showInfo}>
-          <FontAwesomeIcon icon={faGraduationCap} /> Education
-        </button>
-
-        <button className="button-opt" value="experience" onClick={showInfo}>
-          <FontAwesomeIcon icon={faHouseLaptop} /> Experience
-        </button>
-
-        <button className="button-opt" value="knowledge" onClick={showInfo}>
-          <FontAwesomeIcon icon={faCode} /> Knowledge
-        </button>
-
-        <button className="button-opt" value="projects" onClick={showInfo}>
-          <FontAwesomeIcon icon={faCode} /> Projects
-        </button>
-      </div>
 
       {showSection === "education" && <Education education={education} />}
       {showSection === "experience" && <Experience experience={experience} />}

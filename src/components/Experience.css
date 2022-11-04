@@ -1,1 +1,7 @@
+.experience-info {
+  padding: 5px 50px;
+}
 
+.experience-info p:first-child {
+  font-weight: 600;
+}
