@@ -1,5 +1,4 @@
 import React from "react";
-import github from "../assets/images/github.svg";
 
 import "./Hero.css";
 
@@ -14,17 +13,19 @@ const Hero = ({ hero }) => {
         <h1>
           {hero.name} {hero.address}
         </h1>
-        <p>{hero.city}</p>
-        <p>{hero.birthday}</p>
-        <p>
-          <a href={"mailto:" + hero.email}>{hero.email}</a>
-        </p>
-        <p>{hero.phone}</p>
-        <p>
-          <a href={hero.github}>
-            <img className="github-icon" src={github} alt="github" /> GitHub
-          </a>
-        </p>
+        <div className="about-container">
+          {hero.aboutMe.map((item) => {
+            return (
+              <div key={JSON.stringify(item)}>
+                <p>{item.info}</p>
+              </div>
+            );
+          })}
+          <div className="hero-buttons">
+            <button>Download CV</button>
+            <button>Contact</button>
+          </div>
+        </div>
       </div>
     </div>
   );

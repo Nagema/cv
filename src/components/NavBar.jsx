@@ -1,19 +1,19 @@
 import React from "react";
+import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGraduationCap,
   faHouseLaptop,
   faCode,
-  faA,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Buttons = ({ showInfo }) => {
+const NavBar = ({ showInfo }) => {
   return (
     <nav className="navbar-container">
       <div>
         <a href="/">
           <div></div>
-          <div>
+          <div className="navbar-title">
             Angelica <span>Cavero</span>
           </div>
         </a>
@@ -39,4 +39,4 @@ const Buttons = ({ showInfo }) => {
   );
 };
 
-export default Buttons;
+export default NavBar;

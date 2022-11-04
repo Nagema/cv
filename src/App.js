@@ -1,14 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-
-import About from "./components/About";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Knowledge from "./components/Knowledge";
 import Projects from "./components/Projects";
 import { CV } from "./CV/CV";
-import Buttons from "./components/Buttons";
+import NavBar from "./components/NavBar";
 
 const { hero, education, experience, languages, tecnologies, projects } = CV;
 function App() {
@@ -22,9 +20,8 @@ function App() {
 
   return (
     <div className="card">
-      <Buttons showInfo={showInfo} />
+      <NavBar showInfo={showInfo} />
       <Hero hero={hero} />
-      <About hero={hero.aboutMe} />
 
       {showSection === "education" && <Education education={education} />}
       {showSection === "experience" && <Experience experience={experience} />}

@@ -33,14 +33,38 @@
   box-shadow: 0 0 50px #ccc;
 }
 
-h2 {
+h1 {
   color: black;
   text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+  padding-left: 10px;
+}
+h4 {
+  padding: 0 10px 20px 10px;
 }
 
 a {
   color: #0b0089;
   text-decoration: none;
+}
+.about-container {
+  padding: 20px 10px;
+  text-align: justify;
+}
+.hero-buttons button {
+  padding: 1em;
+  margin: 1em 1em 1em 0;
+  width: 9em;
+  background: none;
+  color: inherit;
+  border: 2px solid #7066ff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media (min-width: 824px) {
@@ -48,9 +72,30 @@ a {
     flex-direction: row;
     justify-content: center;
   }
+  .hero-buttons {
+    justify-content: flex-start;
+  }
 
   .card {
     text-align: left;
     border-radius: 12px;
+  }
+
+  .hero-buttons button {
+    padding: 1em;
+    margin: 1em 1em 1em 0;
+    width: 9em;
+    background: none;
+    color: inherit;
+    border: 2px solid #7066ff;
+    border-radius: 30px;
+    font: inherit;
+    cursor: pointer;
+  }
+  .about-container {
+    padding: 10px;
+  }
+  .about-container p {
+    margin-left: 0;
   }
 }
