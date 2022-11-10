@@ -39,7 +39,8 @@ h1 {
   padding-left: 10px;
 }
 h4 {
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 10px;
+  color: rgb(122, 119, 119);
 }
 
 a {
@@ -49,30 +50,38 @@ a {
 .about-container {
   padding: 20px 10px;
   text-align: justify;
+  max-width: 600px;
 }
-.hero-buttons button {
+.hero-link {
   padding: 1em;
   margin: 1em 1em 1em 0;
-  width: 9em;
+  width: 7em;
   background: none;
   color: inherit;
   border: 2px solid #7066ff;
   border-radius: 30px;
   cursor: pointer;
+  text-align: center;
 }
 
-.hero-buttons {
+.hero-links-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.hero-links-container :hover {
+  background-color: #7066ff;
+  color: white;
 }
 
 @media (min-width: 824px) {
   .hero {
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
   }
-  .hero-buttons {
+  .hero-links-container {
     justify-content: flex-start;
   }
 
@@ -81,17 +90,6 @@ a {
     border-radius: 12px;
   }
 
-  .hero-buttons button {
-    padding: 1em;
-    margin: 1em 1em 1em 0;
-    width: 9em;
-    background: none;
-    color: inherit;
-    border: 2px solid #7066ff;
-    border-radius: 30px;
-    font: inherit;
-    cursor: pointer;
-  }
   .about-container {
     padding: 10px;
   }

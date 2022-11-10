@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Hero.css";
 
@@ -21,9 +22,11 @@ const Hero = ({ hero }) => {
               </div>
             );
           })}
-          <div className="hero-buttons">
-            <button>Download CV</button>
-            <button>Contact</button>
+          <div className="hero-links-container">
+            <a type="button" className="hero-link">
+              Download CV
+            </a>
+            <NavLink className="hero-link">Contact</NavLink>
           </div>
         </div>
       </div>

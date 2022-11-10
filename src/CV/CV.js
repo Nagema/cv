@@ -37,6 +37,16 @@ export const CV = {
       date: "AUGUST 2006 - DECEMBER 2013",
       where: "Ricardo Palma University - Perú",
     },
+    {
+      name: "Management and Administration lorem",
+      date: "AUGUST 2006 - DECEMBER 2013",
+      where: "Ricardo Palma University - Perú",
+    },
+    {
+      name: "Management and Administration ipsum",
+      date: "AUGUST 2006 - DECEMBER 2013",
+      where: "Ricardo Palma University - Perú",
+    },
   ],
   experience: [
     {

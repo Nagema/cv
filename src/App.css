@@ -3,18 +3,3 @@
   margin: 0;
   padding: 0;
 }
-
-@media (min-width: 824px) {
-  .hero {
-    flex-direction: row;
-    justify-content: left;
-  }
-
-  .card {
-    text-align: left;
-    border-radius: 12px;
-  }
-  .buttons-wrapper {
-    display: flex;
-  }
-}

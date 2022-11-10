@@ -7,28 +7,35 @@ import Knowledge from "./components/Knowledge";
 import Projects from "./components/Projects";
 import { CV } from "./CV/CV";
 import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
 
 const { hero, education, experience, languages, tecnologies, projects } = CV;
 function App() {
-  let section = "education";
-  const [showSection, setShowSection] = useState(section);
-
-  const showInfo = (e) => {
-    section = e.target.value;
-    setShowSection(section);
-  };
-
   return (
     <div className="card">
-      <NavBar showInfo={showInfo} />
+      <NavBar />
       <Hero hero={hero} />
-
-      {showSection === "education" && <Education education={education} />}
-      {showSection === "experience" && <Experience experience={experience} />}
-      {showSection === "knowledge" && (
-        <Knowledge languages={languages} tecnologies={tecnologies} />
-      )}
-      {showSection === "projects" && <Projects projects={projects} />}
+      <Routes>
+        <Route path="/" element={<Education education={education} />}></Route>
+        <Route
+          path="/education"
+          element={<Education education={education} />}
+        ></Route>
+        <Route
+          path="/experience"
+          element={<Experience experience={experience} />}
+        ></Route>
+        <Route
+          path="/knowledge"
+          element={
+            <Knowledge languages={languages} tecnologies={tecnologies} />
+          }
+        ></Route>
+        <Route
+          path="/projects"
+          element={<Projects projects={projects} />}
+        ></Route>
+      </Routes>
     </div>
   );
 }

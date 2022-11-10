@@ -1,40 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGraduationCap,
-  faHouseLaptop,
-  faCode,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBugSlash } from "@fortawesome/free-solid-svg-icons";
+import { useMediaQuery } from "react-responsive";
+import iconMenu from "../assets/images/icon-menu.svg";
+import iconClose from "../assets/images/icon-close-menu.svg";
+import { NavLink } from "react-router-dom";
 
-const NavBar = ({ showInfo }) => {
+const NavBar = () => {
+  const isWide = useMediaQuery({
+    query: "(min-width: 824px)",
+  });
+
+  const [menuIcon, setMenuIconToggle] = useState(true);
+
+  const handleMenuIcon = () => {
+    setMenuIconToggle(!menuIcon);
+  };
+
   return (
     <nav className="navbar-container">
-      <div>
-        <a href="/">
-          <div></div>
+      <a href="/">
+        <div className="logo-wrapper">
+          <div className="logo-icon">
+            <FontAwesomeIcon icon={faBugSlash} />
+          </div>
           <div className="navbar-title">
             Angelica <span>Cavero</span>
           </div>
-        </a>
-      </div>
-      <div className="buttons-wrapper">
-        <button className="button-opt" value="education" onClick={showInfo}>
-          <FontAwesomeIcon icon={faGraduationCap} /> Education
-        </button>
+        </div>
+      </a>
 
-        <button className="button-opt" value="experience" onClick={showInfo}>
-          <FontAwesomeIcon icon={faHouseLaptop} /> Experience
+      {menuIcon && !isWide ? (
+        <button className="toggle-button" onClick={handleMenuIcon}>
+          <img className="toggle-button-menu" src={iconMenu} alt="open menu" />
         </button>
+      ) : (
+        <div>
+          {!isWide && (
+            <button className="toggle-button" onClick={handleMenuIcon}>
+              <img
+                className="toggle-button-close"
+                src={iconClose}
+                alt="close menu"
+              />
+            </button>
+          )}
 
-        <button className="button-opt" value="knowledge" onClick={showInfo}>
-          <FontAwesomeIcon icon={faCode} /> Knowledge
-        </button>
+          <div className="buttons-wrapper">
+            <NavLink className="button-opt" value="education" to={"/education"}>
+              Education
+            </NavLink>
 
-        <button className="button-opt" value="projects" onClick={showInfo}>
-          <FontAwesomeIcon icon={faCode} /> Projects
-        </button>
-      </div>
+            <NavLink
+              className="button-opt"
+              value="experience"
+              to={"/experience"}
+            >
+              Experience
+            </NavLink>
+
+            <NavLink className="button-opt" value="knowledge" to={"/knowledge"}>
+              Knowledge
+            </NavLink>
+            <NavLink className="button-opt" value="projects" to={"/projects"}>
+              Projects
+            </NavLink>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

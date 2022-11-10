@@ -1,12 +1,16 @@
 .education-wrapper {
   padding: 5px 50px;
 }
+
+.education-info {
+  padding: 10px 0;
+}
 .education-info p:first-child {
   font-weight: 600;
 }
 
 @media (min-width: 824px) {
   .education-wrapper {
-    padding: 5px 150px;
+    padding: 15px 150px;
   }
 }

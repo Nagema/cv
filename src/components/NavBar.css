@@ -1,9 +1,27 @@
+.logo-wrapper {
+  padding-top: 5px;
+  display: flex;
+}
+.logo-icon {
+  font-size: 20px;
+  padding: 2px;
+  width: 2vh;
+}
+.navbar-container {
+  margin-top: 0.5em;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-title {
+  padding: 5px;
+}
 .navbar-title span {
   font-weight: 600;
 }
 
 .button-opt {
-  width: 9em;
+  width: 5em;
   margin: 5px 10px;
   background: none;
   color: inherit;
@@ -11,14 +29,40 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-}
-.button-opt p {
-  margin: 0;
+  text-align: left;
+  padding: 5px 0;
 }
 
-.navbar-container {
-  margin-top: 2em;
-  padding: 20px 50px;
+.buttons-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.toggle-button {
+  visibility: visible;
+  background-color: transparent;
+  border: none;
+  text-align: end;
+}
+.toggle-button-menu {
+  width: 1.5em;
+}
+.toggle-button-close {
+  width: 1.2em;
+}
+@media (min-width: 824px) {
+  .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-container {
+    padding: 20px 50px;
+  }
+  .button-opt {
+    text-align: right;
+    width: 7em;
+  }
+  .button-opt:last-child {
+    width: 6em;
+  }
 }
