@@ -3,6 +3,7 @@ import "./Experience.css";
 const Experience = ({ experience }) => {
   return (
     <div className="card">
+      <h3>EXPERIENCE</h3>
       {experience.map((item) => {
         return (
           <div className="experience-info" key={JSON.stringify(item)}>

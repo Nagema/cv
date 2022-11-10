@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "./Hero.css";
 
 const Hero = ({ hero }) => {
@@ -9,7 +8,7 @@ const Hero = ({ hero }) => {
       <img className="hero-image" src={hero.image} alt="" />
       <div className="card">
         <div>
-          <h4>Frontend-developer</h4>
+          <h4 className="main-label">Frontend-developer</h4>
         </div>
         <h1>
           {hero.name} {hero.address}
@@ -23,10 +22,17 @@ const Hero = ({ hero }) => {
             );
           })}
           <div className="hero-links-container">
-            <a type="button" className="hero-link">
+            <a
+              target="_blank"
+              href="https://www.canva.com/design/DAElOMcoi7Q/eDEKcrARa_E0AlILwdw4Cg/view?utm_content=DAElOMcoi7Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              type="button"
+              className="hero-link"
+            >
               Download CV
             </a>
-            <NavLink className="hero-link">Contact</NavLink>
+            <NavLink to={"/contact-form"} className="hero-link">
+              Contact
+            </NavLink>
           </div>
         </div>
       </div>

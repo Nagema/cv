@@ -1,9 +1,10 @@
+import "./Projects.css";
 import React from "react";
 
 const Projects = ({ projects }) => {
   return (
     <div className="more-section projects card">
-      <h4>Projects</h4>
+      <h3>PROJECTS</h3>
       {projects.map((item) => {
         return (
           <div key={JSON.stringify(item)}>
@@ -14,11 +15,11 @@ const Projects = ({ projects }) => {
             </p>
             <p>
               <a href={item.repository} target="_blank">
-                Repository
+                Link to repository
               </a>
             </p>
-            <p>{item.tecnology}</p>
-            <p>{item.description}</p>
+            <p>{`Tecnology: ${item.tecnology}`}</p>
+            <p>{`Description: ${item.description}`}</p>
           </div>
         );
       })}

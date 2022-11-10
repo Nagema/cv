@@ -1,0 +1,45 @@
+.knowledge-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+.knowledge-section h4 {
+  color: rgb(122, 119, 119);
+  padding: 20px;
+}
+
+.knowledge-section h5 {
+  color: rgb(122, 119, 119);
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+}
+.skills-list li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid rgb(226, 222, 222);
+  min-width: 70px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (min-width: 824px) {
+  .knowledge-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 50px;
+  }
+  .knowledge-section h5 {
+    padding-left: 10%;
+  }
+  .skills-list {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+}

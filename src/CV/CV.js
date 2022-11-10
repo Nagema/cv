@@ -23,6 +23,11 @@ export const CV = {
   },
   education: [
     {
+      name: "Fullstack bootcamp",
+      date: "OCTOBER 2022 - December 2022",
+      where: "Upgrade Hub - Madrid",
+    },
+    {
       name: "HTML5 CSS3 Web Interface Design",
       date: "OCTOBER 2018 - FEBRUARY 2019",
       where: "Fictizia - Madrid",
@@ -34,16 +39,6 @@ export const CV = {
     },
     {
       name: "Management and Administration",
-      date: "AUGUST 2006 - DECEMBER 2013",
-      where: "Ricardo Palma University - Perú",
-    },
-    {
-      name: "Management and Administration lorem",
-      date: "AUGUST 2006 - DECEMBER 2013",
-      where: "Ricardo Palma University - Perú",
-    },
-    {
-      name: "Management and Administration ipsum",
       date: "AUGUST 2006 - DECEMBER 2013",
       where: "Ricardo Palma University - Perú",
     },
@@ -78,11 +73,18 @@ export const CV = {
         "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies. The company manufactures the armor worn by Iron Man and War Machine.",
     },
   ],
-  languages: {
-    language: "English",
-    wrlevel: "C1 level",
-    splevel: "C1 level",
-  },
+  languages: [
+    {
+      language: "English",
+      wrlevel: "B2 level",
+      splevel: "B2 level",
+    },
+    {
+      language: "Spanish",
+      wrlevel: "Native",
+      splevel: "Native",
+    },
+  ],
   tecnologies: [
     "HTML5",
     "CSS3",
@@ -115,6 +117,13 @@ export const CV = {
       tecnology: "React.js",
       description:
         "This app is a phone catalog where you can find detailed information when you click on the phone on the main page. This app also has a list of brands in the header so you can filter them by manufacturer, there is also an option in the header where you can add phone information and it will show you the new phone on the main page of the app.",
+    },
+  ],
+  "social-networking-contact-info": [
+    {
+      linkedin: "www.linkedin.com/in/angelicacp",
+      github: "https://github.com/Nagema",
+      twitter: "https://twitter.com/nagema25",
     },
   ],
 };

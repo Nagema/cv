@@ -4,19 +4,28 @@ import "./Knowledge.css";
 const Knowledge = ({ languages, tecnologies }) => {
   return (
     <div className="card">
-      <div className="more-section languages">
+      <div className="knowledge-section">
+        <h3>KNOWLEDGE</h3>
         <h4>Languages</h4>
-        <p>{languages.language}</p>
-        <p>Writing: {languages.wrlevel}</p>
-        <p>Speaking: {languages.splevel}</p>
-      </div>
-      <h4>Skills</h4>
-      <div className="more-section tecnologies">
-        {tecnologies.map((item) => {
+        {languages.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <p>{item}</p>
+              <h5>{item.language}</h5>
+              <ul className="skills-list">
+                <li>{item.wrlevel}</li>
+                <li>{item.splevel}</li>
+              </ul>
             </div>
+          );
+        })}
+      </div>
+      <div className="knowledge-section ">
+        <h4>Skills</h4>
+        {tecnologies.map((item) => {
+          return (
+            <ul className="skills-list" key={JSON.stringify(item)}>
+              <li>{item}</li>
+            </ul>
           );
         })}
       </div>
