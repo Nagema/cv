@@ -70,6 +70,11 @@ a {
   justify-content: center;
 }
 
+.hero-links-container a {
+  margin: 10px;
+  width: 100px;
+}
+
 .hero-links-container :hover {
   background-color: #7066ff;
   color: white;

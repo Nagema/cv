@@ -9,8 +9,8 @@ const Knowledge = ({ languages, tecnologies }) => {
         <h4>Languages</h4>
         {languages.map((item) => {
           return (
-            <div key={JSON.stringify(item)}>
-              <p>{item.language}</p>
+            <div className="languages-container" key={JSON.stringify(item)}>
+              <p>{item.language}:</p>
               <ul className="skills-list">
                 <li>{item.wrlevel}</li>
                 <li>{item.splevel}</li>
@@ -20,14 +20,12 @@ const Knowledge = ({ languages, tecnologies }) => {
         })}
       </div>
       <div className="knowledge-info">
-        <h4>Skills</h4>
-        {tecnologies.map((item) => {
-          return (
-            <ul className="skills-list" key={JSON.stringify(item)}>
-              <li>{item}</li>
-            </ul>
-          );
-        })}
+        <h4>Technologies</h4>
+        <ul className="skills-list">
+          {tecnologies.map((item) => {
+            return <li key={JSON.stringify(item)}>{item}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );

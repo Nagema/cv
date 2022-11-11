@@ -1,5 +1,5 @@
 .education-wrapper {
-  padding: 5px 50px;
+  padding: 5px 70px;
 }
 
 .education-info {
@@ -11,6 +11,6 @@
 
 @media (min-width: 824px) {
   .education-wrapper {
-    padding: 15px 150px;
+    padding: 50px 250px;
   }
 }
