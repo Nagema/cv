@@ -7,6 +7,7 @@
 }
 .experience-info {
   padding: 15px 50px;
+  max-width: 700px;
 }
 
 .experience-info p:first-child {

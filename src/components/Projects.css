@@ -5,6 +5,18 @@
   justify-content: center;
   padding: 20px 50px;
 }
+
+.more-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.more-section p {
+  max-width: 600px;
+}
 .video {
   width: 300px;
   padding: 10px;

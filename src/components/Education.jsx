@@ -2,8 +2,8 @@ import React from "react";
 import "./Education.css";
 const Education = ({ education }) => {
   return (
-    <div>
-      <div className="education-wrapper">
+    <div className="education-wrapper">
+      <div>
         <h3>EDUCATION - TRAINING</h3>
         {education.map((item) => {
           return (
