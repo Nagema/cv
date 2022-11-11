@@ -3,8 +3,8 @@ import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBugSlash } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
-import iconMenu from "../assets/images/icon-menu.svg";
-import iconClose from "../assets/images/icon-close-menu.svg";
+import iconMenu from "../../assets/images/icon-menu.svg";
+import iconClose from "../../assets/images/icon-close-menu.svg";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {

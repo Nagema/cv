@@ -1,12 +1,12 @@
 import "./App.css";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Knowledge from "./components/Knowledge";
-import Projects from "./components/Projects";
-import NavBar from "./components/NavBar";
+import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
+import Hero from "./components/Hero/Hero";
+import Knowledge from "./components/Knowledge/Knowledge";
+import Projects from "./components/Projects/Projects";
+import NavBar from "./components/Navbar/NavBar";
 import { Routes, Route } from "react-router-dom";
-import ContactForm from "./components/ContactInfo";
+import ContactForm from "./components/Contact-info/ContactInfo";
 import { useEffect, useState } from "react";
 
 function App() {
