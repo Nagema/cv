@@ -4,39 +4,63 @@ import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Knowledge from "./components/Knowledge";
 import Projects from "./components/Projects";
-import { CV } from "./CV/CV";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/ContactInfo";
+import { useEffect, useState } from "react";
 
-const { hero, education, experience, languages, tecnologies, projects } = CV;
 function App() {
+  const [cvInfo, setCvInfo] = useState(null);
+
+  useEffect(() => {
+    fetch("./cv.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setCvInfo(data);
+      });
+  }, []);
+
   return (
-    <div className="card">
+    <div>
       <NavBar />
-      <Hero hero={hero} />
-      <Routes>
-        <Route path="/" element={<Education education={education} />}></Route>
-        <Route
-          path="/education"
-          element={<Education education={education} />}
-        ></Route>
-        <Route
-          path="/experience"
-          element={<Experience experience={experience} />}
-        ></Route>
-        <Route
-          path="/knowledge"
-          element={
-            <Knowledge languages={languages} tecnologies={tecnologies} />
-          }
-        ></Route>
-        <Route
-          path="/projects"
-          element={<Projects projects={projects} />}
-        ></Route>
-        <Route path="/contact-form" element={<ContactForm />}></Route>
-      </Routes>
+      {cvInfo && (
+        <>
+          <Hero hero={cvInfo.hero} />
+          <Routes>
+            <Route
+              path="/"
+              element={<Education education={cvInfo.education} />}
+            ></Route>
+            <Route
+              path="/education"
+              element={<Education education={cvInfo.education} />}
+            ></Route>
+            <Route
+              path="/experience"
+              element={<Experience experience={cvInfo.experience} />}
+            ></Route>
+            <Route
+              path="/knowledge"
+              element={
+                <Knowledge
+                  languages={cvInfo.languages}
+                  tecnologies={cvInfo.tecnologies}
+                />
+              }
+            ></Route>
+            <Route
+              path="/projects"
+              element={<Projects projects={cvInfo.projects} />}
+            ></Route>
+            <Route
+              path="/contact-form"
+              element={
+                <ContactForm socialNetworking={cvInfo.socialNetworking} />
+              }
+            ></Route>
+          </Routes>
+        </>
+      )}
     </div>
   );
 }

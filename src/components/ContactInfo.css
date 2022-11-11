@@ -1,0 +1,13 @@
+.social-network-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network-container a {
+  padding: 10px 30px 0 10px;
+  text-transform: capitalize;
+}
+
+.social-network-container svg {
+  padding-right: 10px;
+}

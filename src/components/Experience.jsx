@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.css";
 const Experience = ({ experience }) => {
   return (
-    <div className="card">
+    <div className="experience-section">
       <h3>EXPERIENCE</h3>
       {experience.map((item) => {
         return (

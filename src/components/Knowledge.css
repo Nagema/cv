@@ -5,12 +5,17 @@
   justify-content: center;
   padding: 20px 50px;
 }
+
+.knowledge-info {
+  align-self: start;
+}
 .knowledge-section h4 {
   color: rgb(122, 119, 119);
   padding: 20px;
 }
 
-.knowledge-section h5 {
+.knowledge-section p {
+  margin: auto;
   color: rgb(122, 119, 119);
 }
 .skills-list {
@@ -29,10 +34,10 @@
 
 @media (min-width: 824px) {
   .knowledge-section {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    padding: 20px 50px;
+  }
+  .knowledge-section h3 {
+    margin: auto;
   }
   .knowledge-section h5 {
     padding-left: 10%;

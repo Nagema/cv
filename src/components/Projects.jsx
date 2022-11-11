@@ -13,11 +13,13 @@ const Projects = ({ projects }) => {
                 {item.name}
               </a>
             </p>
+            <img className="video" src={item.video} alt={item.name} />
             <p>
               <a href={item.repository} target="_blank">
                 Link to repository
               </a>
             </p>
+
             <p>{`Tecnology: ${item.tecnology}`}</p>
             <p>{`Description: ${item.description}`}</p>
           </div>

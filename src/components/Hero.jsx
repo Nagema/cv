@@ -24,7 +24,7 @@ const Hero = ({ hero }) => {
           <div className="hero-links-container">
             <a
               target="_blank"
-              href="https://www.canva.com/design/DAElOMcoi7Q/eDEKcrARa_E0AlILwdw4Cg/view?utm_content=DAElOMcoi7Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              href={hero.cvLink}
               type="button"
               className="hero-link"
             >

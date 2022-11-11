@@ -13,8 +13,13 @@
   display: flex;
   justify-content: space-between;
 }
+.menu-navbar-list {
+  display: flex;
+  flex-direction: column;
+}
 .navbar-title {
   padding: 5px;
+  margin-left: 10px;
 }
 .navbar-title span {
   font-weight: 600;

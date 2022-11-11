@@ -36,7 +36,7 @@ const NavBar = () => {
           <img className="toggle-button-menu" src={iconMenu} alt="open menu" />
         </button>
       ) : (
-        <div>
+        <div className="menu-navbar-list">
           {!isWide && (
             <button className="toggle-button" onClick={handleMenuIcon}>
               <img

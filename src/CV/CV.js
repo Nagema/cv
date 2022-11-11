@@ -9,6 +9,8 @@ export const CV = {
     image:
       "https://avatars.githubusercontent.com/u/40359358?s=400&u=07687bae251b40adf2e52df783886e6b52931c0c&v=4",
     gitHub: "https://github.com/Nagema",
+    cvLink:
+      "https://www.canva.com/design/DAFRloo_iqk/6kS4oaRXiUcYxgZqADjEPw/view?utm_content=DAFRloo_iqk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     aboutMe: [
       {
         info: "Love learning new technologies and looking for new challenges.",
@@ -119,11 +121,18 @@ export const CV = {
         "This app is a phone catalog where you can find detailed information when you click on the phone on the main page. This app also has a list of brands in the header so you can filter them by manufacturer, there is also an option in the header where you can add phone information and it will show you the new phone on the main page of the app.",
     },
   ],
-  "social-networking-contact-info": [
+  socialNetworking: [
     {
-      linkedin: "www.linkedin.com/in/angelicacp",
-      github: "https://github.com/Nagema",
-      twitter: "https://twitter.com/nagema25",
+      name: "linkedin",
+      url: "www.linkedin.com/in/angelicacp",
+    },
+    {
+      name: "gitHub",
+      url: "https://github.com/Nagema",
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/nagema25",
     },
   ],
 };

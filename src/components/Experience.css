@@ -1,5 +1,12 @@
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 .experience-info {
-  padding: 5px 50px;
+  padding: 15px 50px;
 }
 
 .experience-info p:first-child {
