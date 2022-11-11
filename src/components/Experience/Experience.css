@@ -11,5 +11,9 @@
 }
 
 .experience-info p:first-child {
+  padding: 10px 0;
+}
+
+.experience-info p:first-child {
   font-weight: 600;
 }
