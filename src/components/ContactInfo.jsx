@@ -22,7 +22,7 @@ const ContactInfo = ({ socialNetworking, heroInfo }) => {
               className="social-network-container"
               key={JSON.stringify(item)}
             >
-              <a href={item.url}>
+              <a href={item.url} target="_blank">
                 <FontAwesomeIcon icon={itemIcon[item.icon]} />
                 {item.name}
               </a>
