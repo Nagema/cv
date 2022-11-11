@@ -55,7 +55,10 @@ function App() {
             <Route
               path="/contact-form"
               element={
-                <ContactForm socialNetworking={cvInfo.socialNetworking} />
+                <ContactForm
+                  socialNetworking={cvInfo.socialNetworking}
+                  heroInfo={cvInfo.hero}
+                />
               }
             ></Route>
           </Routes>

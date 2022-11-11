@@ -12,7 +12,7 @@ const itemIcon = {
   faGithub,
   faTwitter,
 };
-const ContactInfo = ({ socialNetworking }) => {
+const ContactInfo = ({ socialNetworking, heroInfo }) => {
   return (
     <div className="contact-info">
       <div className="social-network-container">
@@ -29,6 +29,9 @@ const ContactInfo = ({ socialNetworking }) => {
             </div>
           );
         })}
+      </div>
+      <div>
+        <a href={`mailto:${heroInfo.email}`}>{heroInfo.email}</a>
       </div>
     </div>
   );
