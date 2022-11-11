@@ -55,6 +55,7 @@
 .toggle-button-close {
   width: 1.2em;
 }
+
 @media (min-width: 824px) {
   .buttons-wrapper {
     display: flex;

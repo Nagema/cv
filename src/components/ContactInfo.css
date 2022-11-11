@@ -1,6 +1,7 @@
 .social-network-container {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .social-network-container a {
